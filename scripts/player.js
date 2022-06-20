@@ -22,6 +22,7 @@ function Player(x, y) {
             if (upKey) {
                 this.yspeed -= 15;
             }
+            this.yspeed += 5;
             
             if (this.xspeed > this.maxSpeed) {
                 this.xspeed = this.maxSpeed;
