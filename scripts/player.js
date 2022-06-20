@@ -7,6 +7,7 @@ function Player(x, y) {
     this.maxSpeed = 10;
     this.width = 50;
     this.height = 100;
+    this.active = true;
 
     this.step = function(){
 
