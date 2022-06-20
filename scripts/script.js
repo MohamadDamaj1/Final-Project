@@ -38,5 +38,12 @@ function setupInputs() {
         leftkey = true;
       }
 
+      else if (event.key === "s" || event.key === "ArrowDown") {
+        downkey = true;
+      }
+      else if (event.key === "d" || event.key === "ArrowRight") {
+        rightkey = true;
+      }
+
     });
 }
