@@ -18,7 +18,7 @@ window.onload = function() {
     for (let i = 0; i < 6; i++) {
         borders.push(new Border(0 + 100* i, 620, 100, 100, 1));
     }
-    gameloop = setInterval(step, 1000/30);
+    gameLoop = setInterval(step, 1000/30);
    
 }
 
