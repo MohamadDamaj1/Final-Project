@@ -8,6 +8,7 @@ var leftkey;
 
 var gameloop;
 var player;
+var borders = [];
 
 window.onload = function() {
     canvas = document.getElementById("game-canvas");
