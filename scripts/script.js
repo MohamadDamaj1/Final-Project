@@ -32,6 +32,9 @@ function draw() {
     ctx.fillStyle = "white" ;
     ctx.fillRect(0,0,1280,720);
     player.draw();
+    for(let i = 0; i < borders.length; i++) {
+        
+    }
 }
 
 function setupInputs() {
