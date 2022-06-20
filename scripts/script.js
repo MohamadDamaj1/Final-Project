@@ -9,14 +9,16 @@ window.onload = function() {
     ctx = canvas.getContext("2d");
     player = new Player(100, 400);
     gameLoop = setInterval(step, 1000/30);
-    ctx.fillStyle = "white" ;
-    ctx.fillRect(0,0,1280,720);
+   
 }
 
 function step() {
     player.step();
+
+    draw();
 }
 
 function draw() {
-    
+    ctx.fillStyle = "white" ;
+    ctx.fillRect(0,0,1280,720);
 }
