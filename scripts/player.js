@@ -9,6 +9,8 @@ function Player(x, y) {
     }
 
     this.draw = function(){
-        
+        ctx.fillStyle = "red";
+        ctx.fillRect(this.x, this.y, this.width, this.height)
+
     }
 }
