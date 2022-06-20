@@ -18,6 +18,10 @@ window.onload = function() {
     for (let i = 0; i < 6; i++) {
         borders.push(new Border(0 + 100* i, 620, 100, 100, 1));
     }
+    borders.push(new Border(0, 520, 100, 100, 2));
+    for (let i = 0; i < 3; i++) {
+        borders.push(new Border(600, 420 + 100*i, 100, 100, 2))
+    }
     gameLoop = setInterval(step, 1000/30);
    
 }
@@ -69,3 +73,15 @@ document.addEventListener("keyup", function(event) {
     }
 
   });
+
+  function checkIntersection(r1, r2) {
+    if (r1.x >= r2.x + r2.width) {
+        return false;
+    } else if (r1.x + r1.width <= r2.x) {
+        return false;
+    } else if (r1.y + r1.height <= r2.y) {
+        return false;
+    }else {
+        return true
+    }
+  }
