@@ -9,7 +9,12 @@ function Player(x, y) {
     this.height = 100;
     this.active = true;
 
-    this.step = function(){
+    this.step = function() {
+        if (this.active) {
+            if (!leftkey && !rightKey || leftkey && rightKey) {
+                
+            }
+        }
 
     }
 
