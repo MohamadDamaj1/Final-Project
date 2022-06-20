@@ -14,5 +14,9 @@ window.onload = function() {
 }
 
 function step() {
+    player.step();
+}
+
+function draw() {
     
 }
