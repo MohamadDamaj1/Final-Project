@@ -32,6 +32,8 @@ function draw() {
 
 function setupInputs() {
     document.addEventListener("keydown", function(event) {
-
+      if (event.key === "w" || event.key === "ArrowUp") {
+        upKey = true;
+      }
     });
 }
