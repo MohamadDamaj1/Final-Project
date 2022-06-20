@@ -17,7 +17,9 @@ function Player(x, y) {
               this.xspeed ++;
             } else if (leftkey) {
                 this.xspeed --;
-            }
+            } 
+            this.x += this.xspeed;
+            this.y += this.yspeed;
         }
 
     }
