@@ -34,6 +34,9 @@ function setupInputs() {
     document.addEventListener("keydown", function(event) {
       if (event.key === "w" || event.key === "ArrowUp") {
         upKey = true;
+      } else if (event.key === "a" || event.key === "ArrowLeft") {
+        leftkey = true;
       }
+
     });
 }
