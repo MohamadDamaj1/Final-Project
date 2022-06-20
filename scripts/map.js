@@ -10,8 +10,9 @@ function Border (x, y, width, height, type) {
             ctx.fillStyle = "yellow";
 
         } else if (this.type === 2) {
-            ctx.fillStyle = "green"
+            ctx.fillStyle = "green";
         }
+        ctx.fillRect(this.x, this.y, this.width, this.height)
     }
 
 }
