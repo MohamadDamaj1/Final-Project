@@ -47,3 +47,18 @@ function setupInputs() {
 
     });
 }
+document.addEventListener("keyup", function(event) {
+    if (event.key === "w" || event.key === "ArrowUp") {
+      upKey = false;
+    } else if (event.key === "a" || event.key === "ArrowLeft") {
+      leftkey = false;
+    }
+
+    else if (event.key === "s" || event.key === "ArrowDown") {
+      downkey = false;
+    }
+    else if (event.key === "d" || event.key === "ArrowRight") {
+      rightkey = false;
+    }
+
+  });
