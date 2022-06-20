@@ -3,6 +3,8 @@ function Player(x, y) {
     this.y = y;
     this.xspeed = 0;
     this.yspeed = 0;
+    this.friction = 0.6;
+    this.maxspeed = 10;
     this.width = 50;
     this.height = 100;
 
