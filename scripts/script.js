@@ -14,7 +14,7 @@ window.onload = function() {
     ctx = canvas.getContext("2d");
     setupInputs();
     player = new Player(100, 400);
-    gameLoop = setInterval(step, 1000/30);
+    gameloop = setInterval(step, 1000/30);
    
 }
 
@@ -35,7 +35,7 @@ function setupInputs() {
       if (event.key === "w" || event.key === "ArrowUp") {
         upKey = true;
       } else if (event.key === "a" || event.key === "ArrowLeft") {
-        leftKey = true;
+        leftkey = true;
       }
 
       else if (event.key === "s" || event.key === "ArrowDown") {
@@ -51,7 +51,7 @@ document.addEventListener("keyup", function(event) {
     if (event.key === "w" || event.key === "ArrowUp") {
       upKey = false;
     } else if (event.key === "a" || event.key === "ArrowLeft") {
-      leftKey = false;
+      leftkey = false;
     }
 
     else if (event.key === "s" || event.key === "ArrowDown") {
