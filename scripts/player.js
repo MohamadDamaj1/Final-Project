@@ -23,14 +23,19 @@ function Player(x, y) {
                 this.yspeed -= 15;
             }
             this.yspeed += 5;
-            
+
             if (this.xspeed > this.maxSpeed) {
                 this.xspeed = this.maxSpeed;
             } else if (this.xspeed < -this.maxSpeed) {
                 this.xspeed = -this.maxSpeed;
 
             }
-            
+            if (this.yspeed > this.maxSpeed) {
+                this.yspeed = this.maxSpeed;
+            } else if (this.yspeed < -this.maxSpeed) {
+                this.yspeed = -this.maxSpeed;
+
+            }
             this.x += this.xspeed;
             this.y += this.yspeed;
         }
