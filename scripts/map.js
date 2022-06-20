@@ -5,4 +5,13 @@ function Border (x, y, width, height, type) {
     this.height = height;
     this.type = type;
 
+    this.draw = function() {
+        if (this.type === 1) {
+            ctx.fillStyle = "yellow";
+
+        } else if (this.type === 2) {
+            ctx.fillStyle = "green"
+        }
+    }
+
 }
