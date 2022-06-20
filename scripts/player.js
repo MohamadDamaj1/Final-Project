@@ -12,7 +12,11 @@ function Player(x, y) {
     this.step = function() {
         if (this.active) {
             if (!leftkey && !rightKey || leftkey && rightKey) {
-                
+              this.xspeed *= this.friction;
+            } else if (rightKey) {
+              this.xspeed ++;
+            } else if (leftkey) {
+                this.xspeed --;
             }
         }
 
