@@ -17,7 +17,15 @@ function Player(x, y) {
               this.xspeed ++;
             } else if (leftkey) {
                 this.xspeed --;
-            } 
+            }
+            
+            if (this.xspeed > this.maxSpeed) {
+                this.xspeed = this.maxSpeed;
+            } else if (this.xspeed < -this.maxSpeed) {
+                this.xspeed = -this.maxSpeed;
+
+            }
+            
             this.x += this.xspeed;
             this.y += this.yspeed;
         }
