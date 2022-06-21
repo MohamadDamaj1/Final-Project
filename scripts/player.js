@@ -38,6 +38,8 @@ function Player(x, y) {
             }
             if (this.xspeed > 0) {
                 this.xspeed = Math.floor(this.xspeed);
+            } else {
+                this.xspeed = Math.ceil(this.xspeed);
             }
 
             this.x += this.xspeed;
