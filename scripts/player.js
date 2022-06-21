@@ -75,6 +75,12 @@ function Player(x, y) {
                     }
                   this.xspeed = 0;  
                 }
+                if (checkIntersection(horizontalRect, borderRect)) {
+                    while (checkIntersection(horizontalRect, borderRect)) {
+                        horizontalRect.x -= Math.sign(this.xspeed);
+                    }
+                  this.yspeed = 0;  
+                }
             }
 
             this.x += this.xspeed;
