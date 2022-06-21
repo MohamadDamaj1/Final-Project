@@ -75,7 +75,7 @@ function Player(x, y) {
                     }
                   this.xspeed = 0;  
                 }
-                if (checkIntersection(horizontalRect, borderRect)) {
+                if (checkIntersection(verticalRect, borderRect)) {
                     while (checkIntersection(horizontalRect, borderRect)) {
                         horizontalRect.x -= Math.sign(this.xspeed);
                     }
