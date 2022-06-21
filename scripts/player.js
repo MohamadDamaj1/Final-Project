@@ -47,6 +47,35 @@ function Player(x, y) {
                 this.yspeed = Math.ceil(this.yspeed);
             }
 
+            let horizontalRect = {
+                x: this.x + this.xspeed,
+                y: this.y,
+                width: this.width,
+                height:
+                this.height
+            }
+
+            let verticalRect = {
+                x: this.x,
+                y: this.y + this.yspeed,
+                width: this.width,
+                height: this.height
+            }
+
+            for(let i = 0; i < borders.length; i++) {
+                let borderRect = {
+                    x: borders[i].x,
+                    y: borders[i].y,
+                    width: borders[i].width,
+                    height: borders[i].height
+                }
+                if (checkIntersection(horizontalRect, borderRect)) {
+                    while (checkIntersection(horizontalRect, borderRect)) {
+                        horizontalRect.x -= Math.sign(this.xspeed);
+                    }
+                }
+            }
+
             this.x += this.xspeed;
             this.y += this.yspeed;
         }
