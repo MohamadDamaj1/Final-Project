@@ -36,6 +36,10 @@ function Player(x, y) {
                 this.yspeed = -this.maxSpeed;
 
             }
+            if (this.xspeed > 0) {
+                this.xspeed = Math.floor(this.xspeed);
+            }
+
             this.x += this.xspeed;
             this.y += this.yspeed;
         }
