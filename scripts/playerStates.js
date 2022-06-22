@@ -5,5 +5,20 @@ const states = {
 }
 
 class State {
-    
+    constructor(state){
+        this.state = state;
+    }
+}
+
+export class Sitting extends State {
+    constructor(player){
+        super('SITTING');
+        this.player = player;
+    }
+    enter(){
+
+    }
+    handleInput(input){
+        
+    }
 }
