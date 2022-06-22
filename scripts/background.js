@@ -22,6 +22,6 @@ export class Background {
         this.game = game;
         this.width = 1667;
         this.height = 500;
-        this.layer5image = layer5
+        this.layer5image = layer5;
     }
 }
