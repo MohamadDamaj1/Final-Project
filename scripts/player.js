@@ -10,6 +10,9 @@ export class Player {
         this.image = document.getElementById('player');
         this.speed =  0;
         this.maxSpeed = 10;
+        this.states = [];
+        this.currentState = this.states[0];
+        this.currentState.enter();
     }
     update(input){
         this.x += this.speed;
