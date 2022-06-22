@@ -20,9 +20,11 @@ window.addEventListener('load', function(){
        
      }
      update(deltaTime){
+          this.background.update();
           this.player.update(this.input.keys, deltaTime);      
      }
      draw(context){
+        this.background.update();
         this.player.draw(context);
      }
   }

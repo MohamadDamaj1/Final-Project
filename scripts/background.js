@@ -23,8 +23,8 @@ export class Background {
         this.width = 1667;
         this.height = 500;
         this.layer5image = document.getElementById('layer5');
-        this.layer1 = new Layer(this.game, this.width, this.height, 1, this.layerImage5);
-        this.backgroundLayers = [layer1];
+        this.layer1 = new Layer(this.game, this.width, this.height, 1, this.layer5image);
+        this.backgroundLayers = [this.layer1];
     }
     update(){
         this.backgroundLayers.forEach(layer => {
