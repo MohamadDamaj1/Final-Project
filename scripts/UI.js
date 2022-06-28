@@ -1,8 +1,9 @@
 export class UI {
     constructor(game){
         this.game = game;
-        this.fontsize = 30;
-        this.fontFamily = 'Rubik Moonrocks'
+        this.fontSize = 30;
+        this.fontFamily = 'Rubik Moonrocks';
+        this.livesImage = document.getElementById('hearts')
     }
     draw(context){
         context.save();
@@ -16,6 +17,10 @@ export class UI {
         context.fillText('score: ' + this.game.score, 20, 50);
         context.font = this.fontSize * 0.8 + ' px' + this.fontFamily;
         context.fillText('Time:' + (this.game.time * 0.001).toFixed(1), 20, 80);
+        for (let i = 0; i < this.game.lives; i++){
+            context.drawImage(this.livesImage,25 * i + 20, 95, 25, 25);
+        }
+        
 
         if (this.game.gameOver){
             context.textAlign = 'center';
